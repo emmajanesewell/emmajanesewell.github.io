@@ -1,0 +1,125 @@
+.emma {
+    font-size: 30px !important;
+    font-family: 'Quicksand', sans-serif !important;
+}
+.emma:hover {
+    text-decoration: none;
+    color: black;
+}
+h1,
+h3 {
+    font-size: 26px;
+    font-family: 'Quicksand', sans-serif;
+}
+h3 {
+    color: #4c7e8f;
+}
+nav, 
+h2 {
+    font-size: 21px;
+    font-family: 'Quicksand', sans-serif;
+}
+header a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+}
+header a:hover {
+    text-decoration: none;
+    color: #4c7e8f;
+    transition: 0.3s ease;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+.about {
+    background-color:#8ac7db;
+    border-radius: 0%;   
+}
+.size {
+    width: 752px;
+    height: 423px;
+    border: 1px solid grey;
+}
+.button {
+    display: none;
+}
+button {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    background: white;
+    border-radius: 12px;
+    border-color: black;
+    color: black;
+    padding: 5px 28px 5px 28px;
+    border-width: 1pt;
+    transition: 0.5s ease;
+  }
+
+button:hover {
+    background :#8ac7db;
+    color: black;
+    background: #4c7e8f;
+    border-color: #4c7e8f;
+    transition: 0.5s ease;
+}
+.contact {
+    background-color: #4c7e8f;
+    border-radius: 0%;  
+}
+.contact p {
+    text-align: center;
+}
+footer {
+    background-color: #8ac7db;
+    border-radius: 0%;
+}
+.resume {
+    color: black;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    transition: 0.5s ease;
+}
+.resume:hover {
+    text-decoration: none;
+    color: #4c7e8f;
+    transition: 0.5s ease;
+}
+.back {
+    padding-left: 20px;
+}
+.link {
+    padding: 0 20px 0 20px;
+}
+.fa {
+    color: black;
+    padding: 0 10px 0 10px;
+    transition: 0.5s ease;
+}
+.fa-linkedin:hover {
+    color: #4c7e8f;
+    transition: 0.5s ease;
+}
+.fa-instagram:hover {
+    color: #4c7e8f;
+    transition: 0.5s ease;
+}
+.fa-youtube-play:hover {
+    color: #4c7e8f;
+    transition: 0.5s ease;
+}
+.fa-envelope:hover {
+    color:  #8ac7db;
+    transition: 0.5s ease;
+}
+@media (max-width: 767px){
+
+    .size {
+        display: none;
+    }
+    .button {
+        display: block;
+    }
+     
+}
