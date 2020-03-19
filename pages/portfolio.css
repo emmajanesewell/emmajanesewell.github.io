@@ -97,3 +97,6 @@ footer {
     color:  #8ac7db;
     transition: 0.5s ease;
 }
+.pointer {
+    cursor: pointer;
+}
