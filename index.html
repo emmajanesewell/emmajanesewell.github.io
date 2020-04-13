@@ -20,6 +20,11 @@
     <link rel="icon" type="image/x-icon" href="../images/FavIcon.svg">
   </head>
 
+  <body>
+    <div class="loader">
+      <img src="../images/logoani.gif" alt="loading">
+    </div>
+
     <header>
       <div class="d-flex flex-column flex-md-row align-items-center p-4 p-md-3 px-md-5 bg-white">
         <a class="my-0 mr-md-auto font-weight-normal emma" href="../index.html">emma sewell</a>
@@ -105,8 +110,17 @@
       </div>
     </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript">
+      window.addEventListener("load", function(){
+      const loader = document.querySelector(".loader")
+      loader.className += " hidden";
+        if ( ! sessionStorage.getItem( 'doNotShow' ) ) {
+            sessionStorage.setItem( 'doNotShow', true );
+        } else {
+           $ ('.loader, .hidden').hide();
+        }
+      });
+    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
