@@ -1,0 +1,25 @@
+{
+  "name": "emmajanesewell.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "lite-server": "^2.5.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "lite": "lite-server", 
+    "start": "npm run lite"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emmajanesewell/emmajanesewell.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emmajanesewell/emmajanesewell.github.io/issues"
+  },
+  "homepage": "https://github.com/emmajanesewell/emmajanesewell.github.io#readme"
+}
