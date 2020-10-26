@@ -312,7 +312,7 @@ form.on('submit', function (e) {
 			grecaptcha.execute(site_key, {action: 'contact'}).then(function (token) {
 				var gdata = form.serialize() + '&g-recaptcha-response=' + token;
 				$.ajax({
-					url: 'php/mail.php',  // form action url
+					url: 'https://formspree.io/f/xpzodvzo',  // form action url
 					type: 'POST', 		  // form submit method get/post
 					dataType: 'json', 	  // request type html/json/xml
 					data: gdata, 		  // serialize form data
@@ -345,7 +345,7 @@ form.on('submit', function (e) {
 		});
 	} else {
 		$.ajax({
-			url: 'php/mail.php', // form action url
+			url: 'https://formspree.io/f/xpzodvzo', // form action url
 			type: 'POST', // form submit method get/post
 			dataType: 'json', // request type html/json/xml
 			data: form.serialize(), // serialize form data
