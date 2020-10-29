@@ -388,6 +388,9 @@ button.addEventListener('click', function() {
     button.setAttribute("data-text-original", button.innerHTML);
     button.innerHTML = button.getAttribute("data-text-swap");
   }
+document.getElementById("name_input").value="";
+document.getElementById("email_input").value="";
+document.getElementById("text_input").value="";
 }, false);
 
 })(jQuery)
