@@ -293,9 +293,10 @@
         <!-- Filter Menu -->
         <ul class="portfolio-menu nav nav-tabs justify-content-center border-bottom-0 mb-4">
           <li class="nav-item"> <a data-filter="*" class="nav-link active" href="">All</a></li>
-          <li class="nav-item"> <a data-filter=".design" href="" class="nav-link">Design</a></li>
-          <li class="nav-item"> <a data-filter=".brand" href="" class="nav-link">Brand</a></li>
-          <li class="nav-item"> <a data-filter=".photos" href="" class="nav-link">Photos</a></li>
+          <li class="nav-item"> <a data-filter=".design" href="" class="nav-link">Web Design + UX/UI</a></li>
+          <li class="nav-item"> <a data-filter=".brand" href="" class="nav-link">Branding + Graphic Design</a></li>
+          <li class="nav-item"> <a data-filter=".strategy" href="" class="nav-link">Marketing Strategy</a></li>
+          <li class="nav-item"> <a data-filter=".photos" href="" class="nav-link">Photography</a></li>
         </ul>
         <!-- Filter Menu end -->
         <div class="portfolio popup-ajax-gallery">
@@ -411,7 +412,7 @@
           </div>
           <div class="col-md-8 col-xl-9 order-0 order-md-1">
             <h2 class="mb-3 text-5 text-uppercase text-center text-md-left">Send me a message</h2>
-			      <form id="contact-form" action="https://formspree.io/f/xpzodvzo" method="POST">
+			      <form id="contact-form" class="submit-button" action="https://formspree.io/f/xpzodvzo" method="POST">
               <div class="row">
                 <div class="col-xl-6">
                   <div class="form-group">
@@ -428,7 +429,7 @@
                 <textarea name="form-message" class="form-control" rows="5" required placeholder="How can I help?"></textarea>
               </div>
               <p class="text-center mt-4 mb-0">
-				      <button id="submit-btn" class="btn btn-primary rounded-pill d-inline-flex" type="submit">Send Message!</button>
+				      <button id="submit-button" class="btn btn-primary rounded-pill d-inline-flex" type="submit" data-text-swap="Sent!">Send Message</button>
               </p>
             </form>
           </div>

@@ -314,7 +314,7 @@ form.on('submit', function (e) {
 				$.ajax({
 					url: 'https://formspree.io/f/xpzodvzo',  // form action url
 					type: 'POST', 		  // form submit method get/post
-					dataType: 'json', 	  // request type html/json/xml
+					dataType: 'html', 	  // request type html/json/xml
 					data: gdata, 		  // serialize form data
 					beforeSend: function () {
 						submit.attr("disabled", "disabled");
@@ -347,7 +347,7 @@ form.on('submit', function (e) {
 		$.ajax({
 			url: 'https://formspree.io/f/xpzodvzo', // form action url
 			type: 'POST', // form submit method get/post
-			dataType: 'json', // request type html/json/xml
+			dataType: 'html', // request type html/json/xml
 			data: form.serialize(), // serialize form data
 			beforeSend: function () {
 				submit.attr("disabled", "disabled");
@@ -379,5 +379,15 @@ form.on('submit', function (e) {
 		});
 	}
 });
+
+var button = document.getElementById("submit-button");
+button.addEventListener('click', function() {
+  if (button.getAttribute("data-text-swap") == button.innerHTML) {
+    button.innerHTML = button.getAttribute("data-text-original");
+  } else {
+    button.setAttribute("data-text-original", button.innerHTML);
+    button.innerHTML = button.getAttribute("data-text-swap");
+  }
+}, false);
 
 })(jQuery)
